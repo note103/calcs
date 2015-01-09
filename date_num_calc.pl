@@ -7,6 +7,9 @@ use Time::Seconds;
 
 my @list = <DATA>;
 chomp @list;
+for (@list) {
+    $_ =~ s/\//-/g;
+}
 my $date = $list[0];
 my $num = $list[1];
 
@@ -19,4 +22,3 @@ say $substract->ymd." (substract)";
 __DATA__
 2014-12-14
 14
-

@@ -23,7 +23,7 @@ $ans_minute = (($time_total / 60) - ($ans_hour * 60) );
 $ans_second = ($time_total) - ($ans_hour * 60 * 60) - ($ans_minute * 60);
 
 say "total: $time_total";
-say "ans: $ans_hour hours $ans_minute minute $ans_second seconds.";
+say "ans: $ans_hour hours $ans_minute minutes $ans_second seconds.";
 say "---";
 for my $view(@list) {
     print $view;
