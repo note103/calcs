@@ -20,5 +20,5 @@ my $substract = $stamp_local - ONE_DAY * $num;
 say $substract->ymd." (substract)";
 
 __DATA__
-2014-12-14
-14
+2016-01-27
+98
