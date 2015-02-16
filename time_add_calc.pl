@@ -15,7 +15,6 @@ for my $calc_batch(@list) {
     } elsif ($calc_batch =~ /^(\d\d?):(\d\d)$/) {
         $time_total += $1*60 + $2;
     } else {
-        #$time_total += 0;
         $calc_batch = "Error!\n";
     }
 }

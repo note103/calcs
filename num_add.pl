@@ -3,10 +3,7 @@ use strict;
 use warnings;
 use feature 'say';
 
-my $msg = "Input (s|b|q).";
-my $msg_error = "Please select correct one.";
-my ($time_total, $time_calc, $ans_minute, $ans_hour);
-
+my $time_total;
 my @list = <DATA>;
 for my $calc_batch(@list) {
     if ($calc_batch =~ /^(\d+)$/) {
