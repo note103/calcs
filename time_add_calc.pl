@@ -23,16 +23,17 @@ $ans_minute = (($time_total / 60) - ($ans_hour * 60) );
 $ans_second = ($time_total) - ($ans_hour * 60 * 60) - ($ans_minute * 60);
 
 say "total: $time_total sec";
-say "ans: $ans_hour hr $ans_minute min $ans_second sec.";
+say "ans1: $ans_hour:$ans_minute:$ans_second";
+say "ans2: $ans_hour hr $ans_minute min $ans_second sec";
 say "---";
 for my $view(@list) {
     print $view;
 }
 
 __DATA__
-6:58:14
-17:09:49
-00:01:03
-1:02
-02:45
-04:40
+14:59
+15:07
+19:03
+14:50
+15:28
+13:02
